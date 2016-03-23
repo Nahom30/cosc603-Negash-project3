@@ -30,8 +30,8 @@ public class RectangleTest {
 	 */
 	@Test
 	public void testGetArea() {
-		assertEquals(10.0, rect1.getArea(), 0.001); 
-		assertEquals(6.0, rect2.getArea(), 0.001);
+		assertEquals(10,rect1.getArea(), 0.001); 
+		assertEquals(6, rect2.getArea(), 0.001);
 	}
 
 	/**

@@ -8,6 +8,8 @@ public class Rectangle {
 	
 	/** The p2. */
 	private Point p1, p2;
+	private Double width, length;  
+	//created new variable width and length: A = width * height
 	
 	/**
 	 * Instantiates a new rectangle.
@@ -18,6 +20,9 @@ public class Rectangle {
 	Rectangle(Point p1, Point p2) {
 		this.p1 = p1;
 		this.p2 = p2;
+		//initialized the new variable 
+		width = this.p2.x - this.p1.x; 
+		length = this.p2.y - this.p1.y; 
 	}
 	
 	/**
@@ -26,9 +31,11 @@ public class Rectangle {
 	 * @return the area
 	 */
 	public Double getArea() {
-		return Math.abs((p2.x - p1.x) * (p2.y - p1.y)); 
+		Double area= Math.abs(length  * width); 
+		return area; 
 		
 	}
+	
 	
 	/**
 	 * Gets the diagonal.
